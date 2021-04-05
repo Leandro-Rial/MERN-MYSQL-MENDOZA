@@ -1,0 +1,206 @@
+.customerSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.videoBg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background: #232a34;
+}
+
+.customer-content {
+  z-index: 3;
+  max-width: 1200px;
+  position: absolute;
+  padding: 8px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customer-content h1 {
+  color: #fff;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Presentation */
+.presentation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.presentation h1 {
+  font-size: 4rem;
+}
+
+/* Customers */
+.customers {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 10px 12%;
+}
+
+.cards-custom {
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 20px 8px;
+  line-height: 2.5rem;
+}
+
+/* Brands */
+.marcas {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 10%;
+  height: 50vh;
+  line-height: 3rem;
+}
+
+.marcas h1 {
+  font-size: 3rem;
+}
+
+.marcas .brands {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.marcas .brands i {
+  font-size: 5rem;
+  padding: 0 20px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background: #1c1c1c;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 1100px) {
+  /* Presentation */
+  .presentation {
+    height: 20vh;
+  }
+
+  .presentation h1 {
+    font-size: 4rem;
+  }
+
+  /* Customers */
+  .customers {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px 12%;
+  }
+
+  .cards-custom {
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 20px 8px;
+    line-height: 2.5rem;
+  }
+
+  /* Brands */
+  .marcas {
+    height: 40vh;
+    line-height: 3rem;
+  }
+
+  .marcas h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* Customers */
+  .customers {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px 12%;
+  }
+
+  /* Brands */
+  .marcas h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* Customers */
+  .customers {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px 12%;
+  }
+
+  /* Brands */
+  .marcas h1 {
+    font-size: 1rem;
+  }
+
+  .marcas .brands i {
+    font-size: 4.5rem;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .customer-content h1 {
+    font-size: 4rem;
+  }
+
+  .presentation h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Customers */
+  .customers {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px 12%;
+  }
+
+  /* Brands */
+  .marcas h1 {
+    font-size: 1.3rem;
+  }
+
+  .marcas .brands i {
+    font-size: 3rem;
+    padding: 0 5px;
+  }
+}

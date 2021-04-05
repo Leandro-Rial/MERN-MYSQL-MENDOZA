@@ -1,0 +1,356 @@
+.bg {
+  background-image: url(../../../images//bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.bg h1 {
+  font-size: 5rem;
+}
+
+.bg p {
+  font-size: 1.4rem;
+  padding-bottom: 20px;
+}
+
+.bg a {
+  text-decoration: none;
+  color: #000;
+  border: 3px solid #000;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.bg a:hover {
+  background: #d5d5d5;
+}
+
+/* History */
+.history {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+}
+
+.history h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.history p {
+  text-align: center;
+  padding: 20px 30%;
+}
+
+/* Wines */
+.wines {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background: #f6f6f7;
+}
+
+.wines h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.wines .cards {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #000;
+  padding: 20px;
+  max-width: 1000px;
+  height: 70vh;
+  line-height: 2.5rem;
+}
+
+.wines .cards .image {
+  width: 65%;
+  height: 100%;
+}
+
+.wines .cards img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.wines .cards hr {
+  margin: 0 5px;
+}
+
+.wines .cards .card-content {
+  padding: 10px;
+  width: 35%;
+}
+
+.wines .cards .card-content h2 {
+  font-size: 2rem;
+}
+
+.wines .cards .card-content span {
+  color: cornflowerblue;
+}
+
+.wines .cards .card-content button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+  border: 3px solid #000;
+  color: #000;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.wines .cards .card-content button:hover {
+  box-shadow: 10px 10px 5px 0px rgba(146, 146, 146, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(146, 146, 146, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(146, 146, 146, 0.75);
+}
+
+.wines a {
+  width: 250px;
+  margin-top: 30px;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+  border: 3px solid #000;
+  color: #000;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.wines a:hover {
+  box-shadow: 10px 10px 5px 0px rgba(146, 146, 146, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(146, 146, 146, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(146, 146, 146, 0.75);
+}
+
+/* Brands */
+.marcas {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 10%;
+  height: 70vh;
+  line-height: 3rem;
+}
+
+.marcas h1 {
+  font-size: 3rem;
+}
+
+.marcas .brands {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.marcas .brands i {
+  font-size: 5rem;
+  padding: 0 20px;
+}
+
+/* Contact */
+.contact {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  padding: 20px;
+  background: #f6f6f7;
+}
+
+.contact h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.contact form {
+  border: 1px solid #000;
+  padding: 20px;
+  width: 1000px;
+  line-height: 2rem;
+  background: #fff;
+}
+
+.contact form .rows label {
+  margin: 10px 0;
+}
+
+.contact form .rows input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.contact form button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  cursor: pointer;
+  background: #1c1c1c;
+  color: #fff;
+  border: none;
+  transition: 0.5s;
+}
+
+.contact form button:hover {
+  box-shadow: 0px 10px 5px 0px rgba(51, 51, 51, 0.75);
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(51, 51, 51, 0.75);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(51, 51, 51, 0.75);
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background: #1c1c1c;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 1100px) {
+  /* History */
+  .history {
+    height: 40vh;
+  }
+
+  .history h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+
+  .history p {
+    text-align: center;
+    padding: 20px 15%;
+  }
+
+  /* Contact */
+  .contact {
+    height: 60vh;
+  }
+
+  .contact h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+  }
+
+  .contact form {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* History */
+  .history {
+    height: 40vh;
+  }
+
+  .history h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+
+  .history p {
+    text-align: center;
+    padding: 20px 15%;
+  }
+
+  /* Contact */
+  .contact form {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .bg h1 {
+    font-size: 3rem;
+  }
+
+  .bg p {
+    font-size: 1.1rem;
+    padding-bottom: 20px;
+  }
+
+  .bg a {
+    padding: 5px;
+    width: 100px;
+  }
+
+  /* History */
+  .history {
+    height: 60vh;
+  }
+
+  .history h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+
+  .history p {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 20px 10%;
+  }
+
+  /* Contact */
+  .contact {
+    height: 100vh;
+  }
+
+  .contact form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* History */
+  .history {
+    height: 100%;
+    padding: 10px;
+  }
+
+  .history h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+
+  .history p {
+    text-align: center;
+    font-size: .9rem;
+    padding: 20px 15%;
+  }
+
+  /* Contact */
+  .contact {
+    height: 100vh;
+  }
+
+  .contact form {
+    width: 100%;
+  }
+}
